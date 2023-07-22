@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Log-in</title>
+    <script src="cajero.js"></script>
+</head>
+<body onload="addSelect()">
+    <section id="sMenu">
+        <select id="sAcount" onclick="valCta()">
+            <option selected>Seleccione la cuenta</option>            
+            <input type="password" id="valPass" style="display: none;">
+            <button type="submit" id="btnSend" style="display: none;" onclick="valPassw()">Validar</button>
+        </select>
+    </section>
+    
+    <section id="sMenuOption" style="display: none;">
+        <select id="sMoption" >            
+            <option selected>Seleccione la opcion a realizar</option>            
+            <option value="1">Consultar saldo</option>
+            <option value="2">Ingresar monto</option>
+            <option value="3">Retirar Monto</option>            
+            <input type="text" style="display: none;">
+            <button type="submit" id="btnOptSend" onclick="valsMoption()">Enviar</button>
+        </select>
+    </section>
+</body>
+</html>
